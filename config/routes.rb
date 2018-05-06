@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :clients
+  resources :trainers
   post '/client_workouts/find' => 'client_workouts#search'
   resources :client_workouts
   
